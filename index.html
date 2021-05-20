@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body class="bg-dark text-info">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- NAVBAR -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#offcanvasExample" data-bs-toggle="offcanvas" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="bi bi-list"></i>
+                        Brand
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                                    data-bs-target="#simplemodal">SimpleModal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                                    data-bs-target="#modalvertical">ModalVertical</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">ModalStaticBackDrop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                                    data-bs-target="#fullscreenmodal">FullscreenModal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                                    data-bs-target="#fullscreensmmodal">FullscreenModalBelowMedium</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-info" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <!-- SIMPLE MODAL -->
+        <div class="modal fade" id="simplemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Modal Content Go Here
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL VERTICAL CENTER -->
+        <div class="modal fade" id="modalvertical" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas autem ipsum magni, earum
+                        temporibus doloremque quasi debitis veritatis itaque culpa. Neque quibusdam mollitia nemo
+                        cupiditate? Quia iusto exercitationem nihil, autem quaerat necessitatibus provident aliquid
+                        nulla error aut illum blanditiis laborum nisi libero. Rem voluptates dolorem suscipit incidunt
+                        nam hic possimus! Cum corrupti pariatur fuga, alias molestias asperiores, deleniti quo
+                        blanditiis dolores nisi dignissimos magnam ea illo suscipit? Harum earum enim ipsam iste
+                        recusandae dolorum, obcaecati id rerum provident, quos eligendi quae fuga. Inventore modi ab
+                        amet dolorem sequi impedit dolorum harum facere a? Quam reiciendis dignissimos, repudiandae
+                        voluptates fugit magni quo illum officiis expedita magnam voluptas. Rerum doloremque non quam
+                        perspiciatis eum. Fugit itaque laboriosam dolore quod corporis explicabo maiores, excepturi
+                        quaerat voluptatum corrupti! Reprehenderit facilis praesentium eum nemo optio amet quam numquam
+                        obcaecati voluptatem, consequatur nostrum dolore animi nihil ratione ducimus qui ad est illum
+                        minus iste, rem quas vel sed itaque. Vero aliquid doloremque unde aliquam perspiciatis odit
+                        vitae? Maxime, cum asperiores. Minus explicabo rerum assumenda? Quidem nostrum autem quis rem
+                        impedit earum eligendi eveniet nobis ad cupiditate excepturi suscipit necessitatibus voluptatem,
+                        debitis quisquam quo sit in ipsam minus officiis natus fuga tempore consectetur vel. Iure
+                        accusamus excepturi eius temporibus ipsum. Facere fuga nam nihil voluptatibus eius? Atque iste
+                        adipisci id odit, voluptatem ut excepturi. Quo aperiam expedita rerum autem nisi debitis
+                        dignissimos. Praesentium, sunt nulla laborum corrupti commodi, incidunt, eius eos minus et sit
+                        earum adipisci dolores veniam tenetur modi odio reprehenderit reiciendis aspernatur blanditiis
+                        consequuntur labore molestias velit accusamus? Odio dolorum incidunt perspiciatis natus debitis
+                        ratione vel ducimus quibusdam cum aliquam id eum rem eligendi, deleniti expedita ullam deserunt
+                        asperiores, tempora consectetur fugiat excepturi doloribus omnis tenetur. Culpa iure repellat
+                        sequi reprehenderit molestiae sit soluta deleniti quasi nesciunt eaque. Officia deserunt est,
+                        dolorum eius unde sit voluptas rem autem minima aspernatur placeat iure suscipit nostrum? Culpa
+                        reiciendis labore voluptatibus ea. Ratione labore incidunt necessitatibus beatae illum fugiat
+                        sunt mollitia, eligendi a perspiciatis. Eum dolorum fuga eveniet asperiores rem unde. Quaerat
+                        nostrum asperiores sunt hic fugit sed mollitia, dolorem ad eveniet ex veniam accusantium officia
+                        reprehenderit magnam excepturi quas sapiente doloribus ut molestiae at quibusdam harum
+                        repellendus corporis. Voluptatum distinctio cupiditate nam? Dignissimos voluptas itaque
+                        quibusdam blanditiis voluptates est hic praesentium sequi, modi dolor tempore aperiam, labore
+                        magni quos accusantium dolore voluptatem odit iusto, at iure quo adipisci sint totam! Dolores
+                        quibusdam autem at dolorem sit incidunt, aspernatur quasi, earum reiciendis accusantium eveniet
+                        ad assumenda veniam magni obcaecati sunt distinctio? Rem deleniti exercitationem soluta
+                        voluptatum omnis. Dicta pariatur commodi dolor neque officia magnam veniam placeat modi odio,
+                        reprehenderit explicabo cupiditate nisi! Eligendi rerum amet qui et deserunt reprehenderit
+                        minima accusantium praesentium quae. Incidunt sapiente unde voluptatibus odit, iure ex ullam
+                        rerum. Et delectus itaque blanditiis debitis, aliquam vel, rerum nesciunt earum dolorum
+                        recusandae necessitatibus obcaecati voluptatibus velit nemo? Dolores ducimus fuga beatae quae
+                        esse commodi hic numquam, accusamus temporibus molestiae doloremque obcaecati! Laborum natus
+                        assumenda omnis ea cumque veniam architecto inventore ab, exercitationem placeat eveniet earum
+                        excepturi quas veritatis cupiditate delectus ducimus, dolorem nulla cum? Possimus sed est at,
+                        quo molestiae doloribus ipsa nostrum nam voluptatum cumque nisi et exercitationem amet, ad
+                        accusamus similique, corporis officiis quasi asperiores! Cumque, molestias eveniet.
+                        Exercitationem adipisci velit harum quia, ratione quas beatae natus magnam est facere! Alias
+                        assumenda, asperiores labore eius soluta explicabo saepe laudantium aliquid quam quasi
+                        recusandae, aliquam aspernatur quia quis molestiae tempora iste accusamus veniam maiores
+                        voluptates? Id, officiis? Praesentium, mollitia? Soluta quis aut, quam sunt illum facere, fuga
+                        ipsam tempora dolorum reprehenderit officia doloribus molestias eum qui quibusdam mollitia animi
+                        vel perferendis. Aspernatur, sed! Dicta, officia necessitatibus animi aut, adipisci reiciendis
+                        soluta quam, saepe dolores dolore nesciunt numquam voluptatum suscipit distinctio repellendus
+                        officiis non? Illum, consequatur ea dolores numquam provident, facere iure sapiente voluptatem
+                        explicabo totam blanditiis incidunt hic? Odit porro omnis aliquid exercitationem veniam ipsum
+                        consectetur, laborum nobis nisi, reiciendis architecto officiis tenetur eveniet fugiat quo sit,
+                        animi sequi quaerat ex eius? Praesentium impedit non quis eum distinctio facere saepe quibusdam
+                        obcaecati eos temporibus ut, autem asperiores ducimus sapiente repellendus at nulla quasi est
+                        assumenda. Voluptas at odit esse ipsa consequatur eius quo tempore architecto rem molestias
+                        adipisci, sint deleniti voluptatum corporis! Quae adipisci cumque iste porro pariatur
+                        consectetur, eaque est dolores libero excepturi asperiores rem eum veritatis nisi. Est at
+                        dolorum fuga soluta, nesciunt vero dicta, veritatis aliquid consequatur debitis neque beatae
+                        delectus sunt ratione quibusdam dolore dolor ipsa similique, deserunt dolorem. Necessitatibus ex
+                        quam, tenetur facilis nostrum et assumenda optio cum beatae. Libero totam expedita quidem animi
+                        optio deserunt alias. Iure possimus molestias nisi laudantium commodi similique corrupti
+                        accusamus consequuntur id tempore. Vero, eos optio ut minima nemo placeat dicta aspernatur,
+                        natus sint sequi illum enim accusamus expedita. Fugiat minima nesciunt neque, culpa illo maxime
+                        dolorem recusandae dolor assumenda fuga repellat vitae expedita? Molestiae pariatur assumenda
+                        dolor consectetur eveniet nulla repellendus ad, dolorum necessitatibus recusandae voluptate
+                        tempora vitae laborum perferendis totam veniam doloremque beatae similique natus tenetur minima
+                        alias earum? Suscipit repudiandae ipsam vel, officia quisquam temporibus placeat aperiam ad
+                        atque labore nihil consequatur. Quos odio explicabo ea quidem eaque distinctio cum quisquam odit
+                        quam deserunt ullam in quia quaerat at ab aliquid vitae, inventore officia exercitationem vel
+                        saepe qui aliquam nostrum repellat. Maiores, deserunt tempore. Ipsam accusamus eveniet odio?
+                        Voluptatem dignissimos facilis asperiores, odio reiciendis molestias consectetur numquam, ex
+                        pariatur earum doloribus provident totam dolores fuga. Itaque cum ducimus magni odio. Dolorum
+                        nulla veniam ipsam molestias saepe hic natus aperiam quasi unde. Aliquam animi iste id culpa
+                        repudiandae sequi laboriosam, soluta veritatis fuga, placeat ullam nisi accusantium quaerat
+                        unde, qui ipsum et! Cum voluptatibus, ad debitis laboriosam magnam fugiat ipsum placeat corporis
+                        beatae corrupti quasi consequuntur illum libero, adipisci, suscipit quam iure? Aut dolorem
+                        doloremque nisi illum reprehenderit excepturi adipisci doloribus molestiae eum, nihil obcaecati
+                        voluptatibus! Cum, corporis tempora! Aliquam ut rem doloribus, magni officiis ipsum ab in,
+                        sapiente perspiciatis excepturi minus dolore quis at, eaque alias placeat quae consequatur optio
+                        eligendi nam facilis? Dolor, voluptatum et officiis quibusdam sed saepe placeat.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- STATIC BACKDROP MODAL -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FULLSCREEN MODAL -->
+        <div class="modal fade" id="fullscreenmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FULLSCREEN MODAL BELOW MEDIUM -->
+        <div class="modal fade" id="fullscreensmmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-md-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <div class="offcanvas offcanvas-start bg-dark text-info" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button type="button" class="btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close">X</button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="flex-shrink-0 p-3 bg-dark text-info aria-expanded" style="width: 100%;">
+                    <ul class="list-unstyled ps-0 bg-dark text-info">
+                        <li class="mb-1">
+                            <button
+                                class="btn btn-sm btn-outline-info btn-toggle form-control align-items-center rounded collapsed text-start"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                <i class="bi-house"> Home</i>
+                            </button>
+                            <div class="collapse show" id="home-collapse">
+                                <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                    <li><a href="#" class="link-info rounded">Overview</a></li>
+                                    <li><a href="#" class="link-info rounded">Updates</a></li>
+                                    <li><a href="#" class="link-info rounded">Reports</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button
+                                class="btn btn-sm btn-outline-info btn-toggle form-control align-items-center rounded collapsed text-start"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                <i class="bi-folder"> Dashboard</i>
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                    <li><a href="#" class="link-info rounded">Overview</a></li>
+                                    <li><a href="#" class="link-info rounded">Weekly</a></li>
+                                    <li><a href="#" class="link-info rounded">Monthly</a></li>
+                                    <li><a href="#" class="link-info rounded">Annually</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button
+                                class="btn btn-sm btn-outline-info btn-toggle form-control align-items-center rounded collapsed text-start"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                <i class="bi-cart"> Orders</i>
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                    <li><a href="#" class="link-info rounded">New</a></li>
+                                    <li><a href="#" class="link-info rounded">Processed</a></li>
+                                    <li><a href="#" class="link-info rounded">Shipped</a></li>
+                                    <li><a href="#" class="link-info rounded">Returned</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button
+                                class="btn btn-sm btn-outline-info btn-toggle form-control align-items-center rounded collapsed text-start"
+                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                <i class="bi-person"> Account</i>
+                            </button>
+                            <div class="collapse show" id="account-collapse">
+                                <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                    <li><a href="#" class="link-info rounded">New...</a></li>
+                                    <li><a href="#" class="link-info rounded">Profile</a></li>
+                                    <li><a href="#" class="link-info rounded">Settings</a></li>
+                                    <li><a href="#" class="link-info rounded">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-secondary p-1">
+                <!-- DATATABLES -->
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr class="bg-dark text-info">
+                            <th class="bg-dark text-info">Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>$170,750</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Ashton Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009/01/12</td>
+                            <td>$86,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Cedric Kelly</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012/03/29</td>
+                            <td>$433,060</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008/11/28</td>
+                            <td>$162,700</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Brielle Williamson</td>
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2012/12/02</td>
+                            <td>$372,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Herrod Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>59</td>
+                            <td>2012/08/06</td>
+                            <td>$137,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Rhona Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>55</td>
+                            <td>2010/10/14</td>
+                            <td>$327,900</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Colleen Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009/09/15</td>
+                            <td>$205,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Sonya Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>23</td>
+                            <td>2008/12/13</td>
+                            <td>$103,600</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Jena Gaines</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>30</td>
+                            <td>2008/12/19</td>
+                            <td>$90,560</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Quinn Flynn</td>
+                            <td>Support Lead</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2013/03/03</td>
+                            <td>$342,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Charde Marshall</td>
+                            <td>Regional Director</td>
+                            <td>San Francisco</td>
+                            <td>36</td>
+                            <td>2008/10/16</td>
+                            <td>$470,600</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Haley Kennedy</td>
+                            <td>Senior Marketing Designer</td>
+                            <td>London</td>
+                            <td>43</td>
+                            <td>2012/12/18</td>
+                            <td>$313,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Tatyana Fitzpatrick</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>19</td>
+                            <td>2010/03/17</td>
+                            <td>$385,750</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Michael Silva</td>
+                            <td>Marketing Designer</td>
+                            <td>London</td>
+                            <td>66</td>
+                            <td>2012/11/27</td>
+                            <td>$198,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Paul Byrd</td>
+                            <td>Chief Financial Officer (CFO)</td>
+                            <td>New York</td>
+                            <td>64</td>
+                            <td>2010/06/09</td>
+                            <td>$725,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Gloria Little</td>
+                            <td>Systems Administrator</td>
+                            <td>New York</td>
+                            <td>59</td>
+                            <td>2009/04/10</td>
+                            <td>$237,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Bradley Greer</td>
+                            <td>Software Engineer</td>
+                            <td>London</td>
+                            <td>41</td>
+                            <td>2012/10/13</td>
+                            <td>$132,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Dai Rios</td>
+                            <td>Personnel Lead</td>
+                            <td>Edinburgh</td>
+                            <td>35</td>
+                            <td>2012/09/26</td>
+                            <td>$217,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Jenette Caldwell</td>
+                            <td>Development Lead</td>
+                            <td>New York</td>
+                            <td>30</td>
+                            <td>2011/09/03</td>
+                            <td>$345,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Yuri Berry</td>
+                            <td>Chief Marketing Officer (CMO)</td>
+                            <td>New York</td>
+                            <td>40</td>
+                            <td>2009/06/25</td>
+                            <td>$675,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Caesar Vance</td>
+                            <td>Pre-Sales Support</td>
+                            <td>New York</td>
+                            <td>21</td>
+                            <td>2011/12/12</td>
+                            <td>$106,450</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Doris Wilder</td>
+                            <td>Sales Assistant</td>
+                            <td>Sydney</td>
+                            <td>23</td>
+                            <td>2010/09/20</td>
+                            <td>$85,600</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Angelica Ramos</td>
+                            <td>Chief Executive Officer (CEO)</td>
+                            <td>London</td>
+                            <td>47</td>
+                            <td>2009/10/09</td>
+                            <td>$1,200,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Gavin Joyce</td>
+                            <td>Developer</td>
+                            <td>Edinburgh</td>
+                            <td>42</td>
+                            <td>2010/12/22</td>
+                            <td>$92,575</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Jennifer Chang</td>
+                            <td>Regional Director</td>
+                            <td>Singapore</td>
+                            <td>28</td>
+                            <td>2010/11/14</td>
+                            <td>$357,650</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Brenden Wagner</td>
+                            <td>Software Engineer</td>
+                            <td>San Francisco</td>
+                            <td>28</td>
+                            <td>2011/06/07</td>
+                            <td>$206,850</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Fiona Green</td>
+                            <td>Chief Operating Officer (COO)</td>
+                            <td>San Francisco</td>
+                            <td>48</td>
+                            <td>2010/03/11</td>
+                            <td>$850,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Shou Itou</td>
+                            <td>Regional Marketing</td>
+                            <td>Tokyo</td>
+                            <td>20</td>
+                            <td>2011/08/14</td>
+                            <td>$163,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Michelle House</td>
+                            <td>Integration Specialist</td>
+                            <td>Sydney</td>
+                            <td>37</td>
+                            <td>2011/06/02</td>
+                            <td>$95,400</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Suki Burks</td>
+                            <td>Developer</td>
+                            <td>London</td>
+                            <td>53</td>
+                            <td>2009/10/22</td>
+                            <td>$114,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Prescott Bartlett</td>
+                            <td>Technical Author</td>
+                            <td>London</td>
+                            <td>27</td>
+                            <td>2011/05/07</td>
+                            <td>$145,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Gavin Cortez</td>
+                            <td>Team Leader</td>
+                            <td>San Francisco</td>
+                            <td>22</td>
+                            <td>2008/10/26</td>
+                            <td>$235,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Martena Mccray</td>
+                            <td>Post-Sales support</td>
+                            <td>Edinburgh</td>
+                            <td>46</td>
+                            <td>2011/03/09</td>
+                            <td>$324,050</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Unity Butler</td>
+                            <td>Marketing Designer</td>
+                            <td>San Francisco</td>
+                            <td>47</td>
+                            <td>2009/12/09</td>
+                            <td>$85,675</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Howard Hatfield</td>
+                            <td>Office Manager</td>
+                            <td>San Francisco</td>
+                            <td>51</td>
+                            <td>2008/12/16</td>
+                            <td>$164,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Hope Fuentes</td>
+                            <td>Secretary</td>
+                            <td>San Francisco</td>
+                            <td>41</td>
+                            <td>2010/02/12</td>
+                            <td>$109,850</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Vivian Harrell</td>
+                            <td>Financial Controller</td>
+                            <td>San Francisco</td>
+                            <td>62</td>
+                            <td>2009/02/14</td>
+                            <td>$452,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Timothy Mooney</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>37</td>
+                            <td>2008/12/11</td>
+                            <td>$136,200</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Jackson Bradshaw</td>
+                            <td>Director</td>
+                            <td>New York</td>
+                            <td>65</td>
+                            <td>2008/09/26</td>
+                            <td>$645,750</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Olivia Liang</td>
+                            <td>Support Engineer</td>
+                            <td>Singapore</td>
+                            <td>64</td>
+                            <td>2011/02/03</td>
+                            <td>$234,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Bruno Nash</td>
+                            <td>Software Engineer</td>
+                            <td>London</td>
+                            <td>38</td>
+                            <td>2011/05/03</td>
+                            <td>$163,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Sakura Yamamoto</td>
+                            <td>Support Engineer</td>
+                            <td>Tokyo</td>
+                            <td>37</td>
+                            <td>2009/08/19</td>
+                            <td>$139,575</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Thor Walton</td>
+                            <td>Developer</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2013/08/11</td>
+                            <td>$98,540</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Finn Camacho</td>
+                            <td>Support Engineer</td>
+                            <td>San Francisco</td>
+                            <td>47</td>
+                            <td>2009/07/07</td>
+                            <td>$87,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Serge Baldwin</td>
+                            <td>Data Coordinator</td>
+                            <td>Singapore</td>
+                            <td>64</td>
+                            <td>2012/04/09</td>
+                            <td>$138,575</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Zenaida Frank</td>
+                            <td>Software Engineer</td>
+                            <td>New York</td>
+                            <td>63</td>
+                            <td>2010/01/04</td>
+                            <td>$125,250</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Zorita Serrano</td>
+                            <td>Software Engineer</td>
+                            <td>San Francisco</td>
+                            <td>56</td>
+                            <td>2012/06/01</td>
+                            <td>$115,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Jennifer Acosta</td>
+                            <td>Junior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>43</td>
+                            <td>2013/02/01</td>
+                            <td>$75,650</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Cara Stevens</td>
+                            <td>Sales Assistant</td>
+                            <td>New York</td>
+                            <td>46</td>
+                            <td>2011/12/06</td>
+                            <td>$145,600</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Hermione Butler</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>47</td>
+                            <td>2011/03/21</td>
+                            <td>$356,250</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Lael Greer</td>
+                            <td>Systems Administrator</td>
+                            <td>London</td>
+                            <td>21</td>
+                            <td>2009/02/27</td>
+                            <td>$103,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Jonas Alexander</td>
+                            <td>Developer</td>
+                            <td>San Francisco</td>
+                            <td>30</td>
+                            <td>2010/07/14</td>
+                            <td>$86,500</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Shad Decker</td>
+                            <td>Regional Director</td>
+                            <td>Edinburgh</td>
+                            <td>51</td>
+                            <td>2008/11/13</td>
+                            <td>$183,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Michael Bruce</td>
+                            <td>Javascript Developer</td>
+                            <td>Singapore</td>
+                            <td>29</td>
+                            <td>2011/06/27</td>
+                            <td>$183,000</td>
+                        </tr>
+                        <tr class="bg-dark text-info">
+                            <td class="bg-dark text-info">Donna Snider</td>
+                            <td>Customer Support</td>
+                            <td>New York</td>
+                            <td>27</td>
+                            <td>2011/01/25</td>
+                            <td>$112,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="bg-dark text-info">
+                            <th class="bg-dark text-info">Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+
+</html>
